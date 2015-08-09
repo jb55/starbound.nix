@@ -18,20 +18,20 @@ If you can please submit an issue and let me know.
 
 5. run `nix-build -E 'with import <nixpkgs> {}; callPackage ./default.nix {}'`
 
-6. install the resulting build like so: 
+6. install the resulting build like so:
 
-```bash
-nix-env -i /nix/store/<hash>-starbound-1.0
-```
+   ```bash
+   nix-env -i /nix/store/<hash>-starbound-1.0
+   ```
 
-replacing the path with the one from the result of `nix-build`
+   replacing the path with the one from the result of `nix-build`
 
 7. copy and paste this into a `starbound` script in your `$PATH`:
 
-```bash
-#!/usr/bin/env bash
-cd $HOME/.local/share/Steam/steamapps/common/Starbound/linux64
-starbound.bin
-```       
+   ```bash
+   #!/usr/bin/env bash
+   cd $HOME/.local/share/Steam/steamapps/common/Starbound/linux64
+   starbound.bin
+   ```
 
 8. launch starbound by typing `starbound` from a launcher or your shell
