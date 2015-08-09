@@ -3,8 +3,6 @@
 , mesa_glu
 , fetchurl
 , SDL
-, qt5
-, unzip
 }:
 
 let bins = [ "launcher"
@@ -37,7 +35,6 @@ in stdenv.mkDerivation rec {
     mesa_glu
   ]);
 
-  # buildInputs = [ unzip ];
   dontStrip = true;
 
   installPhase = ''
